@@ -1,3 +1,4 @@
+@import "abstract/animations";
 @import "abstract/mixins";
 @import "abstract/variables";
 
@@ -5,5 +6,6 @@
 
 @import "components/button";
 @import "components/hamburger";
+@import "components/menu";
 
 @import "layout/header";

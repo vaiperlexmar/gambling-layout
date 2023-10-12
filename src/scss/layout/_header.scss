@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem auto 0;
-  @include mobile-blue-cell;
+  margin: 1rem auto 3rem;
+  height: 6.2vh;
+  @include mobile-cell;
+  @include blue-border;
 
   &__logo {
     color: white;
@@ -14,11 +16,8 @@
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1.2rem;
-  }
-
-  .menu {
-    display: block;
   }
 
   .lang-button {

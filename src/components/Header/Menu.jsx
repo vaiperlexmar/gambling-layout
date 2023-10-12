@@ -1,23 +1,51 @@
 import React from "react";
 import Link from "./Link";
 
-function Menu() {
+function Menu(isMenuOpen) {
   return (
     <ul className="menu">
-      <Link linkName={"About Us"} path={"#"} className="menu__item" />
-      <Link linkName={"Brands"} path={"#"} className="menu__item" />
-      <Link linkName={"Commissions"} path={"#"} className="menu__item" />
-      <Link linkName={"News"} path={"#"} className="menu__item" />
-      <Link linkName={"Contact Us"} path={"#"} className="menu__item" />
-      <Link linkName={"Careers"} path={"#"} className="menu__item" />
+      <Link
+        linkName={"About us"}
+        path={"#"}
+        className={`menu__item ${isMenuOpen ? "slide-right" : ""}`}
+      />
+      <Link
+        linkName={"Brands"}
+        path={"#"}
+        className={`menu__item ${isMenuOpen ? "slide-right" : ""}`}
+      />
+      <Link
+        linkName={"Commissions"}
+        path={"#"}
+        className={`menu__item ${isMenuOpen ? "slide-right" : ""}`}
+      />
+      <Link
+        linkName={"News"}
+        path={"#"}
+        className={`menu__item ${isMenuOpen ? "slide-right" : ""}`}
+      />
+      <Link
+        linkName={"Contact us"}
+        path={"#"}
+        className={`menu__item ${isMenuOpen ? "slide-right" : ""}`}
+      />
+      <Link
+        linkName={"Careers"}
+        path={"#"}
+        className={`menu__item ${isMenuOpen ? "slide-right" : ""}`}
+      />
 
-      <li className="menu__item menu__login">
-        {" "}
-        <button>Log In</button>
-      </li>
-      <li className="menu__item menu__signUp">
-        <button>Sign Up</button>
-      </li>
+      <Link
+        linkName={"Log In"}
+        path={"#"}
+        className={`menu__item menu__login ${isMenuOpen ? "slide-top" : ""}`}
+      />
+
+      <Link
+        linkName={"Sign Up"}
+        path={"#"}
+        className={`menu__item menu__sign-up ${isMenuOpen ? "slide-top" : ""}`}
+      />
     </ul>
   );
 }
