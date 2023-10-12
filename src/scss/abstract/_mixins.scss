@@ -1,0 +1,8 @@
+@mixin mobile-blue-cell {
+  width: 94vw;
+  height: 6.2vh;
+  border-radius: 10rem;
+  padding: 0 2rem;
+
+  border: 2px solid $color-blue-main;
+}

@@ -1,0 +1,10 @@
+.main {
+  &_hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  &_visible {
+    display: block;
+  }
+}
