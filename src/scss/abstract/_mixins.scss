@@ -14,3 +14,9 @@
   text-align: center;
   font-size: 1.6rem;
 }
+
+@mixin chipbar {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+}
