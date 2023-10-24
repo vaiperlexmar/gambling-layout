@@ -5,15 +5,20 @@ import Main from "./components/Main/Main";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHamburgerClicked, setHamburgerClicked] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleMenuClick = () => {
+    setHamburgerClicked(!isHamburgerClicked);
+
+    isMenuOpen
+      ? setTimeout(() => setIsMenuOpen(!isMenuOpen), 500)
+      : setTimeout(() => setIsMenuOpen(!isMenuOpen), 500);
   };
 
   return (
     <>
-      <Header onMenuClick={toggleMenu} isMenuOpen={isMenuOpen} />
-      <Main isMenuOpen={isMenuOpen} />
+      <Header handleMenuClick={handleMenuClick} isMenuOpen={isMenuOpen} />
+      <Main isHamburgerClicked={isHamburgerClicked} isMenuOpen={isMenuOpen} />
     </>
   );
 }
