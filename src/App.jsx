@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ function App() {
     <>
       <Header handleMenuClick={handleMenuClick} isMenuOpen={isMenuOpen} />
       <Main isHamburgerClicked={isHamburgerClicked} isMenuOpen={isMenuOpen} />
+      <Footer isHamburgerClicked={isHamburgerClicked} isMenuOpen={isMenuOpen} />
     </>
   );
 }

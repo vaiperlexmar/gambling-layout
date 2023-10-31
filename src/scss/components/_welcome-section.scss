@@ -8,7 +8,7 @@
   &__bg {
     position: absolute;
     top: -15%;
-    left: 30%;
+    left: 20%;
     transform: rotate(-54.311deg);
   }
 
@@ -26,6 +26,7 @@
 
   &__link {
     @include link;
+    font-size: $font-size-regular;
   }
 
   &__btn {

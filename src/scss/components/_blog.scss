@@ -1,5 +1,6 @@
 .blog {
   padding: 0 1rem;
+  margin-bottom: 12rem;
 
   .heading-secondary {
     text-align: center;
@@ -8,9 +9,7 @@
   }
 
   .posts {
-    border: 2px solid $color-blue-main;
-    border-radius: 5rem;
-    padding: 0 1rem;
+    @include mobile-section;
     overflow-y: scroll;
     background-color: hsla(0, 0%, 100%, 0.2);
     height: 42rem;

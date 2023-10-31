@@ -1,0 +1,40 @@
+.footer {
+  @include mobile-section;
+  border-radius: 5rem 5rem 0 0;
+  padding: 2rem;
+  background-color: $color-deep-blue;
+
+  &_hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  &_visible {
+    display: block;
+  }
+
+  &__links {
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    display: block;
+    @include link;
+  }
+
+  &__heading {
+    margin-bottom: 0.8rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+  &__social-btn {
+    width: 8vw;
+    height: 8vw;
+  }
+}

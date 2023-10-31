@@ -155,8 +155,14 @@ body {
   line-height: 2.6rem;
   opacity: 0.6; }
 
+.tiny-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem; }
+
 .blog {
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  margin-bottom: 12rem; }
   .blog .heading-secondary {
     text-align: center;
     text-transform: uppercase;
@@ -304,8 +310,8 @@ body {
     color: #fff;
     margin-bottom: 0.6rem; }
   .post__date {
-    font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6; }
 
 .welcome {
   padding: 7rem 0 0;
@@ -316,7 +322,7 @@ body {
   .welcome__bg {
     position: absolute;
     top: -15%;
-    left: 30%;
+    left: 20%;
     transform: rotate(-54.311deg); }
   .welcome__textbox {
     text-align: center; }
@@ -342,6 +348,35 @@ body {
     list-style-type: none;
     font-weight: 600;
     padding: 1.5rem 2rem; }
+
+.footer {
+  border: 2px solid #478bf9;
+  border-radius: 5rem;
+  padding: 0 1rem;
+  border-radius: 5rem 5rem 0 0;
+  padding: 2rem;
+  background-color: #1e1231; }
+  .footer_hidden {
+    display: none;
+    visibility: hidden; }
+  .footer_visible {
+    display: block; }
+  .footer__links {
+    margin-bottom: 2rem; }
+  .footer__link {
+    display: block;
+    color: white;
+    text-decoration: none; }
+  .footer__heading {
+    margin-bottom: 0.8rem; }
+  .footer__social {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.8rem;
+    padding-bottom: 1rem; }
+  .footer__social-btn {
+    width: 8vw;
+    height: 8vw; }
 
 .header {
   display: flex;

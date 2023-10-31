@@ -4,6 +4,7 @@ import Link from "../Link";
 import Chips from "./Chips";
 import WelcomeSection from "./Welcome";
 import Blog from "./Blog";
+import posts from "./Posts";
 
 function Main({ isHamburgerClicked, isMenuOpen }) {
   const [mainAnimation, setMainAnimation] = useState("slide-top");
@@ -22,39 +23,6 @@ function Main({ isHamburgerClicked, isMenuOpen }) {
       }, 500);
     }
   }, [isHamburgerClicked]);
-
-  const posts = [
-    {
-      heading: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
-      date: "10.02.2023",
-      link: "#",
-    },
-    {
-      heading: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
-      date: "10.02.2023",
-      link: "#",
-    },
-    {
-      heading: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
-      date: "10.02.2023",
-      link: "#",
-    },
-    {
-      heading: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
-      date: "10.02.2023",
-      link: "#",
-    },
-    {
-      heading: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
-      date: "10.02.2023",
-      link: "#",
-    },
-    {
-      heading: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
-      date: "10.02.2023",
-      link: "#",
-    },
-  ];
 
   return (
     <>

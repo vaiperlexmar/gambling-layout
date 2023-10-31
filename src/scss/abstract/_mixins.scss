@@ -24,5 +24,10 @@
 @mixin link {
   color: white;
   text-decoration: none;
-  font-size: $font-size-regular;
+}
+
+@mixin mobile-section {
+  border: 2px solid $color-blue-main;
+  border-radius: 5rem;
+  padding: 0 1rem;
 }
