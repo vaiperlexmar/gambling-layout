@@ -3,6 +3,7 @@
   list-style-type: none;
   flex-direction: column;
   gap: 0.45rem;
+  padding-top: 3rem;
 
   &__item {
     @include mobile-cell;

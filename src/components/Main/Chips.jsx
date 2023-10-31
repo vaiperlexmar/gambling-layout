@@ -28,9 +28,6 @@ function Chips() {
             <img src={shield} />
           </div>
           <div className="chip">
-            <img src={soccer_white} />
-          </div>
-          <div className="chip">
             <img src={shield} />
           </div>
         </div>
@@ -47,9 +44,6 @@ function Chips() {
           </div>
           <div className="chip">
             <img src={shield} />
-          </div>
-          <div className="chip">
-            <img src={soccer_white} />
           </div>
           <div className="chip">
             <img src={shield} />

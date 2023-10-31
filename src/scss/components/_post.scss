@@ -1,0 +1,23 @@
+.post {
+  display: block;
+  text-decoration: none;
+  margin: 1rem auto 1rem;
+  padding: 1.5rem 3.5rem;
+  background-color: $color-deep-blue;
+  border-radius: 4rem;
+
+  &:first-child {
+    background-color: $color-blue-main;
+  }
+
+  &__heading {
+    font-size: $font-size-small;
+    color: #fff;
+    margin-bottom: 0.6rem;
+  }
+
+  &__date {
+    font-size: $font-size-tiny;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+}

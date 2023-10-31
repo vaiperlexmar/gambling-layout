@@ -1,0 +1,22 @@
+.blog {
+  padding: 0 1rem;
+
+  .heading-secondary {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+  }
+
+  .posts {
+    border: 2px solid $color-blue-main;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    overflow-y: scroll;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    height: 42rem;
+    scrollbar-color: $color-blue-main hsla(0, 0%, 100%, 0.12);
+    ::-webkit-scrollbar {
+      background-color: $color-blue-main;
+    }
+  }
+}

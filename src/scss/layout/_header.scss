@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem auto 3rem;
-  height: 6.2vh;
+  margin: 1rem auto 0;
+  height: 5.6rem;
   @include mobile-cell;
   @include blue-border;
 

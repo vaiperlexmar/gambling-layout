@@ -1,14 +1,18 @@
 .welcome {
-  padding: 4rem 0 0;
+  padding: 7rem 0 0;
+  margin-bottom: 3.3rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
 
   &__bg {
     position: absolute;
-    top: -50%;
-    left: 0;
+    top: -15%;
+    left: 30%;
+    transform: rotate(-54.311deg);
   }
 
   &__textbox {
-    position: relative;
     text-align: center;
 
     .heading-primary {
