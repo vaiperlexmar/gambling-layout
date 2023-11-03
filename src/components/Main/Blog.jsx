@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Post from "./Post";
 import Scrollbar from "smooth-scrollbar";
+import BackgroundImg from "../../assets/Main/Blog_Dot_Light.svg";
 
 const Blog = ({ posts }) => {
   const postsRef = useRef(null);
@@ -25,6 +26,8 @@ const Blog = ({ posts }) => {
           <Post props={post} key={index} />
         ))}
       </div>
+
+      <img className="blog__bg" src={BackgroundImg} />
     </section>
   );
 };

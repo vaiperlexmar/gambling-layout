@@ -1,6 +1,10 @@
 .blog {
   padding: 0 1rem;
-  margin-bottom: 12rem;
+  margin-bottom: -13rem;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+  padding-bottom: 25rem;
 
   .heading-secondary {
     text-align: center;
@@ -10,6 +14,8 @@
 
   .posts {
     @include mobile-section;
+    position: relative;
+    z-index: 999;
     overflow-y: scroll;
     background-color: hsla(0, 0%, 100%, 0.2);
     height: 42rem;
@@ -17,5 +23,15 @@
     ::-webkit-scrollbar {
       background-color: $color-blue-main;
     }
+  }
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 100%;
+    opacity: 0.7;
+    filter: blur(13.5rem);
   }
 }
